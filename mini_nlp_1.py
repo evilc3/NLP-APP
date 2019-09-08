@@ -110,7 +110,7 @@ class MainScreen2(Screen):
         self.exportb.bind(on_press = self.export)
         self.vecbutton = Button(text = 'Export Vectorizer Files')
         self.vecbutton.bind(on_press = self.vec)
-        
+        self.vecbutton.disabled = True
         
         expbox.add_widget(self.exportb)
         expbox.add_widget(self.vecbutton)
@@ -287,17 +287,20 @@ class MainScreen2(Screen):
 
             print(self.columns)
 
+            if self.LABEL not in self.columns:
+                self.error_text.text = 'column with specifed label name not found'
 
 
 
-            self.label_info = ' '
+
+            
             # self.data_info = str(self.dataset.info())
             # print('******** info {} ********'.format(self.dataset.info()))
             if self.LABEL != 'None':
-                self.label_info =str( self.dataset[self.LABEL].value_counts())
-            
-
-            self.description.text =  'total no. of records'+ str(len(self.dataset) )+ '\n' + 'COlumns Present ' + str(self.columns) + '\n' + self.label_info
+                self.label_info = str(self.dataset[self.LABEL].value_counts())
+                self.description.text =  'total no. of records'+ str(len(self.dataset) )+ '\n' + 'COlumns Present ' + str(self.columns) + '\n\n' +'label info.\n' + self.label_info
+            else: 
+                self.description.text =  'total no. of records'+ str(len(self.dataset) )+ '\n' + 'COlumns Present ' + str(self.columns) + '\n' + 'label information not available'
 
 
             self.grid.clear_widgets()
@@ -393,6 +396,8 @@ class MainScreen2(Screen):
                 
     
             # self.pop_export.dismiss()    
+
+            self.vecbutton.disabled = False    
         except  Exception: 
                 print('saving error')
                 self.error_text.text = 'Saving Error make sure the file extension is either csv or xlsx'
