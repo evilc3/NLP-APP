@@ -28,7 +28,7 @@ A simple python app made with kivy that combines all the basic nlp preprocessing
 ### Settings Screen 
 this screen allows one to play around with the different settings and see what happend when different settings are applied.
 
-![](ScreenShot(8).png)
+![](Screenshot%20(8).png)
 
 
 
