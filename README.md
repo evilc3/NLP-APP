@@ -32,3 +32,8 @@ this screen allows one to play around with the different settings and see what h
 
 
 
+Feature work:
+1 improve the user interface 
+2 add more features any suggestions are welcomed in the comments 
+3 create .exe file in the feature 
+4 create  a exportable file  for muli col files 
