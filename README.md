@@ -1,6 +1,11 @@
 # NLP-APP
 A simple python app made with kivy that combines all the basic nlp preprocessing  need to start with nlp task.
+### pre-prequisites
+install kivy  https://kivy.org/doc/stable/installation/installation-windows.html
 
+install nltk using <code>pip install nltk</code>
+
+install sklearn using <code>pip install sklearn</code>
 
 ### To run the application enter the below command in the terminal
 <code>python mini_nlp_1.py
