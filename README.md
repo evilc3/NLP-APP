@@ -7,6 +7,10 @@ install nltk using <code>pip install nltk</code>
 
 install sklearn using <code>pip install sklearn</code>
 
+install pandas 
+
+install pickle
+
 ### To run the application enter the below command in the terminal
 <code>python mini_nlp_1.py
 </code>
