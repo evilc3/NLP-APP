@@ -15,6 +15,17 @@ install pickle
 <code>python mini_nlp_1.py
 </code>
 
+## Note the extended stopwords are taken form : https://github.com/6/stopwords-json (english)
+
+Along with that it has filters to remove punctuations.
+code is given below
+<code>
+        input =  re.sub('[!@#$%^&*()\n_:><?\-.{}|+-,;""``~`—]|[0-9]|/|=|\[\]|\[\[\]\]',' ',input)
+        input = re.sub('[“’\']','',input)   
+</code>
+
+
+
 ###### Note :- due to some problems  with  PyInstaller failing in importing  nltk_data i could not create the .exe file 
 
 <h1>A Quick User Guide</h1> 
