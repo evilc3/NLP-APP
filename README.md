@@ -1,4 +1,8 @@
-This is git commit
+# Web App  [added in 2020] 
+Created a  webapp using streamlit, has the same features as the desktop app, the app is hosted on heroku. 
+
+Url : https://nlpallinone.herokuapp.com/
+
 
 # NLP-APP
 A simple python app made with kivy that combines all the basic nlp preprocessing  need to start with nlp task.
